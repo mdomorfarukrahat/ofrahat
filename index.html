@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Omor Faruk Rahat- Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">OFR<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="typewriter">MD Omor Faruk Rahat</span></h1>
+            <p class="subtitle">Software Engineering Student | Full-Stack Developer</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Get In Touch</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="glitch" data-text="OFR">OFR</div>
+            <canvas id="heroCanvas"></canvas>
+        </div>
+    </section>
+    
+    <section id="about" class="section about reveal">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="profile-photo.jpg" alt="MD Omor Faruk Rahat" decoding="async">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="about-text">
+                <p>Passionate software engineering student with a strong foundation in full-stack development, algorithmic problem-solving, and emerging technologies. I thrive on turning complex challenges into elegant, user-centric solutions.</p>
+                <p>Currently pursuing a Bachelor's in Software Engineering, I've developed proficiency in multiple programming languages and frameworks while maintaining a keen eye for UI/UX design principles.</p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>University</h3>
+                        <p>Zhengzhou University</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Expected Graduation</h3>
+                        <p>June 2027</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Location</h3>
+                        <p>Zhengzhou City, Henan Province, China</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Availability</h3>
+                        <p>Internships & Full-Time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="section skills reveal">
+        <div class="section-header">
+            <h2>Technical Skills</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <span>JavaScript/TypeScript</span>
+                        <span>90%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>Python</span>
+                        <span>85%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>Java</span>
+                        <span>80%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>C++</span>
+                        <span>75%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <span>React</span>
+                        <span>85%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>Vue.js</span>
+                        <span>70%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>HTML5/CSS3</span>
+                        <span>95%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>Tailwind CSS</span>
+                        <span>80%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <span>Node.js</span>
+                        <span>80%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>Express.js</span>
+                        <span>75%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>Django</span>
+                        <span>70%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>REST APIs</span>
+                        <span>85%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Others</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <span>Git & GitHub</span>
+                        <span>90%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>Docker</span>
+                        <span>65%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>AWS Basics</span>
+                        <span>60%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>SQL/NoSQL</span>
+                        <span>75%</span>
+                        <div class="bar-fill"><div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="section projects reveal">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="projects-filter" role="group" aria-label="Filter projects by category">
+            <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Web Apps</button>
+            <button type="button" class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile</button>
+            <button type="button" class="filter-btn" data-filter="ai" aria-pressed="false">AI/ML</button>
+        </div>
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x300?text=Project+1" alt="E-Commerce Platform">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-stack e-commerce solution with React frontend, Node.js/Express backend, and PostgreSQL database. Features include product catalog, shopping cart, user authentication, and admin dashboard.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>PostgreSQL</span>
+                        <span>Redux</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Fitness Tracker App">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Fitness Tracker Mobile App</h3>
+                    <p>Cross-platform mobile application built with React Native that tracks workouts, nutrition, and progress. Integrates with wearable devices and provides personalized fitness recommendations.</p>
+                    <div class="project-tags">
+                        <span>React Native</span>
+                        <span>Expo</span>
+                        <span>Firebase</span>
+                        <span>Redux</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x300?text=Project+3" alt="AI Image Classifier">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>AI-Powered Image Classifier</h3>
+                    <p>Deep learning model using TensorFlow/Keras to classify images with 92% accuracy. Built a web interface allowing users to upload images and receive real-time predictions.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Keras</span>
+                        <span>Flask</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Card 4 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x300?text=Project+4" alt="Real-Time Chat App">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Real-Time Chat Application</h3>
+                    <p>WebSocket-powered chat application with rooms, private messaging, and message persistence. Built with Socket.io, React, and MongoDB for scalable real-time communication.</p>
+                    <div class="project-tags">
+                        <span>Socket.io</span>
+                        <span>React</span>
+                        <span>MongoDB</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="projects-empty" hidden>No projects in this category yet. Check back soon!</p>
+
+    </section>
+<section id="contact" class="section contact reveal">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Zhengzhou City, Henan Province, China</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>omor.faruk@email.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(555) 123-4567</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-globe"></i>
+                    <span>omorfaruk.dev</span>
+                </div>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone">
+                    <label for="phone">Phone Number (Optional)</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> MD Omor Faruk Rahat. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

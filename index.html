@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD Omor Faruk Rahat- Software Engineer</title>
+    <title>MD Omor Faruk Rahat | Software Engineering Undergraduate</title>
+    <meta name="description" content="Portfolio of MD Omor Faruk Rahat — Software Engineering undergraduate at Zhengzhou University, China. Systems, AI & Mobile Developer.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,192 +12,197 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
-    
-    <nav class="navbar">
+    <a href="#home" class="skip-link" aria-label="Skip to main content">Skip to content</a>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="cursor-follower" aria-hidden="true"></div>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-content">
-            <a href="#" class="logo">OFR<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+            <a href="#home" class="logo" aria-label="OFR home">OFR<span>.</span></a>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#academic" class="nav-link" role="menuitem">Academic</a></li>
+                <li role="none"><a href="#research" class="nav-link" role="menuitem">Research</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#hire" class="nav-link" role="menuitem">Hire Me</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
             </ul>
-            <div class="mobile-menu-btn">
+            <button type="button" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
-    
+
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Hello, I'm <span class="typewriter">MD Omor Faruk Rahat</span></h1>
-            <p class="subtitle">Software Engineering Student | Full-Stack Developer</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary">View Projects</a>
-                <a href="#contact" class="btn secondary">Get In Touch</a>
+            <p class="subtitle">Software Engineering Undergraduate | Systems, AI & Mobile Developer</p>
+            <div class="hero-meta">
+                <span><i class="fas fa-university" aria-hidden="true"></i> Zhengzhou University</span>
+                <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Zhengzhou, Henan, China</span>
+                <span class="status-badge available"><span class="dot"></span> Available for Freelance & Research Collaboration</span>
             </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary" aria-label="View my projects">View Projects</a>
+                <a href="CV v2.pdf" class="btn secondary" download aria-label="Download academic CV PDF">Download CV</a>
+            </div>
+            <div class="social-icons" role="list" aria-label="Social links">
+                <a href="https://github.com/mdomorfarukrahat" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" role="listitem"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://linkedin.com/in/omor-faruk-rahat" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" role="listitem"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="mailto:rahatmdomorfaruk@gmail.com" aria-label="Send email" role="listitem"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                <a href="tel:+8616696171024" aria-label="Call phone" role="listitem"><i class="fas fa-phone" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class="hero-bg">
             <div class="glitch" data-text="OFR">OFR</div>
-            <canvas id="heroCanvas"></canvas>
+            <canvas id="heroCanvas" aria-hidden="true"></canvas>
         </div>
     </section>
-    
+
     <section id="about" class="section about reveal">
         <div class="section-header">
-            <h2>About Me</h2>
+            <h2>Career Profile</h2>
             <div class="divider"></div>
         </div>
         <div class="about-content">
             <div class="about-image">
-                <img src="profile-photo.jpg" alt="MD Omor Faruk Rahat" decoding="async">
+                <img src="profile-photo.jpg" alt="Portrait of MD Omor Faruk Rahat" decoding="async">
                 <div class="image-overlay"></div>
             </div>
             <div class="about-text">
-                <p>Passionate software engineering student with a strong foundation in full-stack development, algorithmic problem-solving, and emerging technologies. I thrive on turning complex challenges into elegant, user-centric solutions.</p>
-                <p>Currently pursuing a Bachelor's in Software Engineering, I've developed proficiency in multiple programming languages and frameworks while maintaining a keen eye for UI/UX design principles.</p>
+                <p>I am a Software Engineering undergraduate at <strong>Zhengzhou University</strong>, a National Double First-Class institution in Henan Province, China. I engineer reliable systems at the intersection of embedded hardware, mobile applications, machine learning, and clean software architecture.</p>
+                <p>My philosophy is <em>build small, verify, then scale</em>: I prototype tightly with STM32 microcontrollers, ship Android labs with strong separation of concerns, and validate ML pipelines with reproducible notebooks. I am preparing for a CSC-funded Master's in China (Autumn 2027) focused on AI, NLP, HPC, and Cybersecurity.</p>
                 <div class="info-grid">
                     <div class="info-item">
+                        <h3>Degree</h3>
+                        <p>B.Eng. in Software Engineering (2023 – 2027)</p>
+                    </div>
+                    <div class="info-item">
                         <h3>University</h3>
-                        <p>Zhengzhou University</p>
+                        <p>Zhengzhou University, China</p>
                     </div>
                     <div class="info-item">
-                        <h3>Expected Graduation</h3>
-                        <p>June 2027</p>
+                        <h3>Cumulative GPA</h3>
+                        <p>3.08 / 4.00 (82/100)</p>
                     </div>
                     <div class="info-item">
-                        <h3>Location</h3>
-                        <p>Zhengzhou City, Henan Province, China</p>
+                        <h3>Languages</h3>
+                        <p>English (B2 / MOI), Chinese (HSK-4), Bengali (Native)</p>
                     </div>
                     <div class="info-item">
-                        <h3>Availability</h3>
-                        <p>Internships & Full-Time</p>
+                        <h3>Email</h3>
+                        <p>rahatmdomorfaruk@gmail.com</p>
                     </div>
+                    <div class="info-item">
+                        <h3>WeChat</h3>
+                        <p>omorfarukra</p>
+                    </div>
+                </div>
+                <div class="about-actions">
+                    <a href="CV v2.pdf" class="btn primary" download aria-label="Download full academic CV"><i class="fas fa-file-pdf" aria-hidden="true"></i> Academic CV</a>
+                    <a href="resume.pdf" class="btn secondary" download aria-label="Download one page resume"><i class="fas fa-file-alt" aria-hidden="true"></i> 1-Page Resume</a>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <section id="academic" class="section academic reveal">
+        <div class="section-header">
+            <h2>Academic Profile</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="academic-grid">
+            <div class="metric-card large">
+                <div class="metric-value" data-target="3.08">0.00</div>
+                <div class="metric-label">Cumulative GPA / 4.00</div>
+                <div class="metric-caption">108.0 completed credits</div>
+            </div>
+            <div class="metric-card large">
+                <div class="metric-value" data-target="82" data-suffix="%">0</div>
+                <div class="metric-label">Overall Weighted Average</div>
+                <div class="metric-caption">Across all completed coursework</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" data-target="3.74">0.00</div>
+                <div class="metric-label">Year 3 Semester GPA</div>
+                <div class="metric-caption">Accelerated momentum</div>
+            </div>
+            <div class="metric-card cert">
+                <div class="metric-icon"><i class="fas fa-language" aria-hidden="true"></i></div>
+                <div class="metric-label">HSK Level 4</div>
+                <div class="metric-caption">Official CLEC / MOE China</div>
+            </div>
+            <div class="metric-card cert">
+                <div class="metric-icon"><i class="fas fa-certificate" aria-hidden="true"></i></div>
+                <div class="metric-label">English MOI</div>
+                <div class="metric-caption">Zhengzhou University verified</div>
+            </div>
+            <div class="metric-card cert">
+                <div class="metric-icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
+                <div class="metric-label">CEFR B2 English</div>
+                <div class="metric-caption">Professional working proficiency</div>
+            </div>
+        </div>
+        <h3 class="subsection-title">High-Scoring Coursework</h3>
+        <div class="course-grid" id="courseGrid"></div>
+    </section>
+
+    <section id="research" class="section research reveal">
+        <div class="section-header">
+            <h2>Research Profile & Objectives</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="research-content">
+            <div class="research-intro">
+                <p>I am actively preparing for Master's degree studies in China (Autumn 2027) under the <strong>Chinese Government Scholarship (CSC)</strong> or university high-level postgraduate schemes. My research interests sit at the boundary of scalable systems and intelligent software.</p>
+                <div class="status-badge available"><span class="dot"></span> Seeking Research Collaboration & Graduate Supervision</div>
+            </div>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Deep learning architecture design, model evaluation, and reproducible ML pipelines using PyTorch and Scikit-Learn.</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+                    <h3>Natural Language Processing</h3>
+                    <p>Text representation, sequence modeling, and low-resource language applications.</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon"><i class="fas fa-server" aria-hidden="true"></i></div>
+                    <h3>High-Performance Computing</h3>
+                    <p>Parallel algorithms, multicore/GPU acceleration, and distributed systems fundamentals.</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon"><i class="fas fa-network-wired" aria-hidden="true"></i></div>
+                    <h3>Computer Systems & Networks</h3>
+                    <p>Embedded networked systems, protocol design, and systems-level optimization.</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
+                    <h3>Cybersecurity</h3>
+                    <p>Secure system architecture, threat modeling, and defense mechanisms for IoT and web platforms.</p>
+                </div>
+            </div>
+            <div class="research-note">
+                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                <p>Academic references and official transcripts are available upon request. Please use the contact form or chat widget to request verification documents.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="skills" class="section skills reveal">
         <div class="section-header">
             <h2>Technical Skills</h2>
             <div class="divider"></div>
         </div>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Languages</h3>
-                <div class="skill-bars">
-                    <div class="skill-bar">
-                        <span>JavaScript/TypeScript</span>
-                        <span>90%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                    <div class="skill-bar">
-                        <span>Python</span>
-                        <span>85%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                    <div class="skill-bar">
-                        <span>Java</span>
-                        <span>80%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                    <div class="skill-bar">
-                        <span>C++</span>
-                        <span>75%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Frontend</h3>
-                <div class="skill-bars">
-                    <div class="skill-bar">
-                        <span>React</span>
-                        <span>85%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                    <div class="skill-bar">
-                        <span>Vue.js</span>
-                        <span>70%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                    <div class="skill-bar">
-                        <span>HTML5/CSS3</span>
-                        <span>95%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                    <div class="skill-bar">
-                        <span>Tailwind CSS</span>
-                        <span>80%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Backend</h3>
-                <div class="skill-bars">
-                    <div class="skill-bar">
-                        <span>Node.js</span>
-                        <span>80%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                    <div class="skill-bar">
-                        <span>Express.js</span>
-                        <span>75%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                    <div class="skill-bar">
-                        <span>Django</span>
-                        <span>70%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                    <div class="skill-bar">
-                        <span>REST APIs</span>
-                        <span>85%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Tools & Others</h3>
-                <div class="skill-bars">
-                    <div class="skill-bar">
-                        <span>Git & GitHub</span>
-                        <span>90%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                    <div class="skill-bar">
-                        <span>Docker</span>
-                        <span>65%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                    <div class="skill-bar">
-                        <span>AWS Basics</span>
-                        <span>60%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                    <div class="skill-bar">
-                        <span>SQL/NoSQL</span>
-                        <span>75%</span>
-                        <div class="bar-fill"><div></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="skills-container" id="skillsContainer"></div>
     </section>
-    
+
     <section id="projects" class="section projects reveal">
         <div class="section-header">
             <h2>Featured Projects</h2>
@@ -204,104 +210,34 @@
         </div>
         <div class="projects-filter" role="group" aria-label="Filter projects by category">
             <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
-            <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Web Apps</button>
+            <button type="button" class="filter-btn" data-filter="systems" aria-pressed="false">Systems / IoT</button>
             <button type="button" class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile</button>
-            <button type="button" class="filter-btn" data-filter="ai" aria-pressed="false">AI/ML</button>
+            <button type="button" class="filter-btn" data-filter="ai" aria-pressed="false">AI / ML</button>
+            <button type="button" class="filter-btn" data-filter="software" aria-pressed="false">Software</button>
         </div>
-        <div class="projects-grid">
-            <!-- Project Card 1 -->
-            <div class="project-card" data-category="web">
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/400x300?text=Project+1" alt="E-Commerce Platform">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>E-Commerce Platform</h3>
-                    <p>A full-stack e-commerce solution with React frontend, Node.js/Express backend, and PostgreSQL database. Features include product catalog, shopping cart, user authentication, and admin dashboard.</p>
-                    <div class="project-tags">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>PostgreSQL</span>
-                        <span>Redux</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Project Card 2 -->
-            <div class="project-card" data-category="mobile">
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Fitness Tracker App">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Fitness Tracker Mobile App</h3>
-                    <p>Cross-platform mobile application built with React Native that tracks workouts, nutrition, and progress. Integrates with wearable devices and provides personalized fitness recommendations.</p>
-                    <div class="project-tags">
-                        <span>React Native</span>
-                        <span>Expo</span>
-                        <span>Firebase</span>
-                        <span>Redux</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Project Card 3 -->
-            <div class="project-card" data-category="ai">
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/400x300?text=Project+3" alt="AI Image Classifier">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>AI-Powered Image Classifier</h3>
-                    <p>Deep learning model using TensorFlow/Keras to classify images with 92% accuracy. Built a web interface allowing users to upload images and receive real-time predictions.</p>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>TensorFlow</span>
-                        <span>Keras</span>
-                        <span>Flask</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Project Card 4 -->
-            <div class="project-card" data-category="web">
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/400x300?text=Project+4" alt="Real-Time Chat App">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Real-Time Chat Application</h3>
-                    <p>WebSocket-powered chat application with rooms, private messaging, and message persistence. Built with Socket.io, React, and MongoDB for scalable real-time communication.</p>
-                    <div class="project-tags">
-                        <span>Socket.io</span>
-                        <span>React</span>
-                        <span>MongoDB</span>
-                        <span>Node.js</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <p class="projects-empty" hidden>No projects in this category yet. Check back soon!</p>
-
+        <div class="projects-grid" id="projectsGrid"></div>
+        <p class="projects-empty" hidden>No projects in this category yet.</p>
     </section>
-<section id="contact" class="section contact reveal">
+
+    <section id="hire" class="section hire reveal">
+        <div class="section-header">
+            <h2>Hire Me / Services</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="hire-content">
+            <div class="hire-intro">
+                <div class="status-badge available"><span class="dot"></span> Available for Freelance & Research Collaboration</div>
+                <p>I take on select projects where I can deliver measurable engineering value. If you need a system built, a model prototyped, or technical documentation authored, let's talk.</p>
+            </div>
+            <div class="services-grid" id="servicesGrid"></div>
+            <div class="hire-actions">
+                <a href="#contact" class="btn primary" aria-label="Start a project via contact form"><i class="fas fa-rocket" aria-hidden="true"></i> Start a Project</a>
+                <button type="button" class="btn secondary" id="scheduleBtn" aria-label="Open scheduling options"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Schedule a Call</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact reveal">
         <div class="section-header">
             <h2>Get In Touch</h2>
             <div class="divider"></div>
@@ -310,56 +246,105 @@
             <div class="contact-info">
                 <h3>Contact Information</h3>
                 <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Zhengzhou City, Henan Province, China</span>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <span>Zhengzhou University, Zhengzhou, Henan, China 450001</span>
                 </div>
                 <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>omor.faruk@email.com</span>
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <span>rahatmdomorfaruk@gmail.com</span>
                 </div>
                 <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <span>(555) 123-4567</span>
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <span>(+86) 16696171024</span>
                 </div>
                 <div class="info-item">
-                    <i class="fas fa-globe"></i>
-                    <span>omorfaruk.dev</span>
+                    <i class="fab fa-weixin" aria-hidden="true"></i>
+                    <span>omorfarukra</span>
+                </div>
+                <div class="contact-actions">
+                    <a href="CV v2.pdf" class="btn primary" download aria-label="Download academic CV"><i class="fas fa-file-pdf" aria-hidden="true"></i> Download CV</a>
+                    <a href="resume.pdf" class="btn secondary" download aria-label="Download one page resume"><i class="fas fa-file-alt" aria-hidden="true"></i> Download Resume</a>
                 </div>
             </div>
-            <form id="contactForm" class="contact-form">
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" novalidate>
                 <div class="form-group">
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" name="name" placeholder=" " required aria-required="true">
                     <label for="name">Full Name</label>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" placeholder=" " required aria-required="true">
                     <label for="email">Email Address</label>
                 </div>
                 <div class="form-group">
-                    <input type="tel" id="phone">
-                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="text" id="subject" name="subject" placeholder=" " required aria-required="true">
+                    <label for="subject">Subject</label>
                 </div>
                 <div class="form-group">
-                    <textarea id="message" required></textarea>
+                    <textarea id="message" name="message" placeholder=" " required aria-required="true"></textarea>
                     <label for="message">Your Message</label>
                 </div>
-                <button type="submit" class="btn primary">Send Message</button>
+                <button type="submit" class="btn primary" aria-label="Send message">Send Message</button>
+                <div class="form-status" role="status" aria-live="polite"></div>
             </form>
         </div>
     </section>
-    
+
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; <span id="year"></span> MD Omor Faruk Rahat. All Rights Reserved.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="social-icons" role="list" aria-label="Social links">
+                <a href="https://github.com/mdomorfarukrahat" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" role="listitem"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://linkedin.com/in/omor-faruk-rahat" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" role="listitem"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="mailto:rahatmdomorfaruk@gmail.com" aria-label="Send email" role="listitem"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                <a href="tel:+8616696171024" aria-label="Call phone" role="listitem"><i class="fas fa-phone" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
-    
+
+    <div class="chat-widget" id="chatWidget" aria-label="Live chat">
+        <button type="button" class="chat-toggle" id="chatToggle" aria-label="Open chat" aria-expanded="false" aria-controls="chatBox">
+            <i class="fas fa-comment" aria-hidden="true"></i>
+            <span class="chat-unread" id="chatUnread" aria-hidden="true">0</span>
+        </button>
+        <div class="chat-box" id="chatBox" role="dialog" aria-modal="true" aria-labelledby="chatTitle" hidden>
+            <div class="chat-header">
+                <div>
+                    <h3 id="chatTitle">Message Me</h3>
+                    <span class="chat-status"><span class="dot"></span> Replies within 24 hours</span>
+                </div>
+                <button type="button" class="chat-close" id="chatClose" aria-label="Close chat"><i class="fas fa-times" aria-hidden="true"></i></button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message bot">
+                    <p>Hi there! I'm Omor. Send me a message and I'll be notified instantly on Telegram.</p>
+                </div>
+            </div>
+            <form class="chat-form" id="chatForm" novalidate>
+                <input type="text" id="chatName" name="chatName" placeholder="Your name" required aria-label="Your name">
+                <textarea id="chatMessage" name="chatMessage" placeholder="Type your message..." required aria-label="Your message" rows="1"></textarea>
+                <button type="submit" class="chat-send" aria-label="Send message"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="scheduleModal" role="dialog" aria-modal="true" aria-labelledby="scheduleTitle" hidden>
+        <div class="modal-backdrop" id="scheduleBackdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="scheduleTitle">Schedule a Call</h3>
+                <button type="button" class="modal-close" id="scheduleClose" aria-label="Close scheduling modal"><i class="fas fa-times" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Choose a channel and suggest a time. I typically respond within 24 hours.</p>
+                <ul class="schedule-list">
+                    <li><a href="mailto:rahatmdomorfaruk@gmail.com?subject=Schedule a call with Omor" class="btn secondary"><i class="fas fa-envelope" aria-hidden="true"></i> Email me to schedule</a></li>
+                    <li><a href="https://linkedin.com/in/omor-faruk-rahat" target="_blank" rel="noopener noreferrer" class="btn secondary"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn message</a></li>
+                    <li><a href="weixin://dl/chat?omorfarukra" class="btn secondary"><i class="fab fa-weixin" aria-hidden="true"></i> WeChat: omorfarukra</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

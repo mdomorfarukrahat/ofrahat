@@ -13,15 +13,17 @@
 </head>
 <body>
     <a href="#home" class="skip-link" aria-label="Skip to main content">Skip to content</a>
+
     <div class="cursor" aria-hidden="true"></div>
     <div class="cursor-follower" aria-hidden="true"></div>
 
+    <!-- 1. NAVBAR -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-content">
             <a href="#home" class="logo" aria-label="OFR home">OFR<span>.</span></a>
             <ul class="nav-links" role="menubar">
                 <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
-                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">Career Profile</a></li>
                 <li role="none"><a href="#academic" class="nav-link" role="menuitem">Academic</a></li>
                 <li role="none"><a href="#research" class="nav-link" role="menuitem">Research</a></li>
                 <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
@@ -37,6 +39,7 @@
         </div>
     </nav>
 
+    <!-- 2. HERO -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Hello, I'm <span class="typewriter">MD Omor Faruk Rahat</span></h1>
@@ -49,6 +52,7 @@
             <div class="hero-buttons">
                 <a href="#projects" class="btn primary" aria-label="View my projects">View Projects</a>
                 <a href="CV v2.pdf" class="btn secondary" download aria-label="Download academic CV PDF">Download CV</a>
+                <a href="resume.pdf" class="btn secondary" download aria-label="Download one page resume">Download Resume</a>
             </div>
             <div class="social-icons" role="list" aria-label="Social links">
                 <a href="https://github.com/mdomorfarukrahat" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" role="listitem"><i class="fab fa-github" aria-hidden="true"></i></a>
@@ -63,6 +67,7 @@
         </div>
     </section>
 
+    <!-- 3. CAREER PROFILE -->
     <section id="about" class="section about reveal">
         <div class="section-header">
             <h2>Career Profile</h2>
@@ -110,6 +115,7 @@
         </div>
     </section>
 
+    <!-- 4. ACADEMIC PROFILE -->
     <section id="academic" class="section academic reveal">
         <div class="section-header">
             <h2>Academic Profile</h2>
@@ -151,6 +157,7 @@
         <div class="course-grid" id="courseGrid"></div>
     </section>
 
+    <!-- 5. RESEARCH PROFILE -->
     <section id="research" class="section research reveal">
         <div class="section-header">
             <h2>Research Profile & Objectives</h2>
@@ -195,6 +202,7 @@
         </div>
     </section>
 
+    <!-- 6. TECHNICAL SKILLS -->
     <section id="skills" class="section skills reveal">
         <div class="section-header">
             <h2>Technical Skills</h2>
@@ -203,6 +211,7 @@
         <div class="skills-container" id="skillsContainer"></div>
     </section>
 
+    <!-- 7. PROJECTS -->
     <section id="projects" class="section projects reveal">
         <div class="section-header">
             <h2>Featured Projects</h2>
@@ -219,6 +228,7 @@
         <p class="projects-empty" hidden>No projects in this category yet.</p>
     </section>
 
+    <!-- 8. HIRE ME / SERVICES -->
     <section id="hire" class="section hire reveal">
         <div class="section-header">
             <h2>Hire Me / Services</h2>
@@ -237,6 +247,7 @@
         </div>
     </section>
 
+    <!-- 9. CONTACT & CHAT -->
     <section id="contact" class="section contact reveal">
         <div class="section-header">
             <h2>Get In Touch</h2>
@@ -301,6 +312,7 @@
         </div>
     </footer>
 
+    <!-- Floating Real-Time Chat Widget -->
     <div class="chat-widget" id="chatWidget" aria-label="Live chat">
         <button type="button" class="chat-toggle" id="chatToggle" aria-label="Open chat" aria-expanded="false" aria-controls="chatBox">
             <i class="fas fa-comment" aria-hidden="true"></i>
@@ -327,6 +339,7 @@
         </div>
     </div>
 
+    <!-- Schedule Modal -->
     <div class="modal" id="scheduleModal" role="dialog" aria-modal="true" aria-labelledby="scheduleTitle" hidden>
         <div class="modal-backdrop" id="scheduleBackdrop"></div>
         <div class="modal-content">

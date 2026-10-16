@@ -16,7 +16,7 @@ const CONFIG = {
         endpoint: 'https://formspree.io/f/YOUR_FORMSPREE_ID'
     },
     chatProxy: {
-        endpoint: 'https://YOUR_WORKER_SUBDOMAIN.workers.dev/chat',
+        endpoint: '/api/chat',
         enabled: true
     },
     profile: {

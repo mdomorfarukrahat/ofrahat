@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             endpoint: 'https://formspree.io/f/YOUR_FORMSPREE_ID'
         },
         telegram: {
-            botToken: '8367966368:AAGpWLiNnQjwL7545Smdy843cYFzreWgsVs',
+            botToken: '',
             chatId: '6436808555',
             enabled: true // Toggle after filling token + chat id
         },
